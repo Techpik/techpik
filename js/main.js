@@ -24,11 +24,16 @@ document.addEventListener('DOMContentLoaded', () => {
   // portfolio filters
   const chips = document.querySelectorAll('#filters .chip');
   const works = document.querySelectorAll('#workGrid .work');
+  const grid = document.getElementById('workGrid');
+  const applyFilter = f => {
+    works.forEach(w => w.classList.toggle('hide', f !== 'all' && w.dataset.cat !== f));
+    grid.classList.toggle('cols2', f === 'web'); // bigger 2-col layout for websites
+  };
+  applyFilter('web'); // default view: Website Development
   chips.forEach(chip => chip.addEventListener('click', () => {
     chips.forEach(c => c.classList.remove('current'));
     chip.classList.add('current');
-    const f = chip.dataset.f;
-    works.forEach(w => w.classList.toggle('hide', f !== 'all' && w.dataset.cat !== f));
+    applyFilter(chip.dataset.f);
   }));
 
   // contact form -> WhatsApp composer (works on static hosting)
