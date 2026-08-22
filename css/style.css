@@ -94,6 +94,15 @@ h1,h2,h3,h4,h5{font-family:'Poppins',sans-serif;line-height:1.25}
 .cap i{font-style:normal;color:var(--acc);font-size:.82rem;font-weight:700}
 .work.hide{display:none}
 
+/* highlights from live projects */
+.hl-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:44px}
+.hl{position:relative;border-radius:16px;overflow:hidden;border:1px solid var(--line);aspect-ratio:4/3;background:#fff}
+.hl img{width:100%;height:100%;object-fit:cover;object-position:top;transition:.5s}
+.hl:hover img{transform:scale(1.04)}
+.hl .cap{opacity:1;transform:none;padding:40px 18px 14px;background:linear-gradient(transparent,rgba(5,6,8,.9))}
+@media(max-width:900px){.hl-grid{grid-template-columns:1fr}}
+.section-head small{display:block;color:var(--mut);font-weight:400;font-size:.92rem;letter-spacing:0;text-transform:none;margin-top:8px}
+
 /* services */
 .service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
 .service{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:28px;transition:.25s;display:flex;flex-direction:column;gap:12px}
