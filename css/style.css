@@ -18,6 +18,8 @@ h1,h2,h3,h4,h5{font-family:'Poppins',sans-serif;line-height:1.25}
 .brand img{height:38px;width:auto}
 .menu{display:flex;align-items:center;gap:26px;list-style:none;font-weight:600;font-size:.95rem}
 .menu a{color:var(--mut);transition:.2s}
+.menu a.btn{color:#fff}
+.menu a.btn:hover{color:#fff}
 .menu a:hover{color:var(--txt)}
 .burger{display:none;background:none;border:0;cursor:pointer;padding:6px}
 .burger span{display:block;width:24px;height:2px;background:var(--txt);margin:5px 0;border-radius:2px;transition:.3s}
@@ -28,6 +30,8 @@ h1,h2,h3,h4,h5{font-family:'Poppins',sans-serif;line-height:1.25}
 .btn-sm{padding:9px 20px;font-size:.85rem}
 .btn.ghost{background:transparent;border:1px solid var(--line);color:var(--txt)}
 .btn.ghost:hover{border-color:var(--acc);color:var(--acc);box-shadow:none}
+.service .btn.ghost{border-color:var(--acc);color:var(--acc)}
+.service .btn.ghost:hover{background:var(--acc);color:#fff}
 
 /* hero */
 .hero{min-height:100svh;display:flex;align-items:center;padding:120px 0 60px;
@@ -109,7 +113,7 @@ h1,h2,h3,h4,h5{font-family:'Poppins',sans-serif;line-height:1.25}
 .service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
 .service{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:28px;transition:.25s;display:flex;flex-direction:column;gap:12px}
 .service:hover{transform:translateY(-5px);border-color:rgba(255,69,27,.45)}
-.service img{width:34px;height:34px;filter:invert(.65) sepia(1) saturate(9) hue-rotate(-18deg)}
+.service img{width:34px;height:34px}
 .service h4{font-size:1.05rem}
 .service p{color:var(--mut);font-size:.92rem;flex-grow:1}
 
