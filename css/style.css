@@ -140,7 +140,7 @@ h1,h2,h3,h4,h5{font-family:'Poppins',sans-serif;line-height:1.25}
 
 @media(max-width:900px){
   .hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}
-  .resume-grid,.service-grid,.review-grid{grid-template-columns:1fr 1fr}
+  .resume-grid,.service-grid{grid-template-columns:1fr 1fr}
   .work-grid{grid-template-columns:1fr 1fr}
   .stats-grid{grid-template-columns:repeat(2,1fr);row-gap:28px}
   .hero-photo{order:-1;max-width:340px}
@@ -149,12 +149,12 @@ h1,h2,h3,h4,h5{font-family:'Poppins',sans-serif;line-height:1.25}
   .burger{display:block}
 }
 @media(max-width:560px){
-  .resume-grid,.service-grid,.review-grid,.work-grid,.f-row{grid-template-columns:1fr}
+  .resume-grid,.service-grid,.work-grid,.f-row{grid-template-columns:1fr}
   .section{padding:70px 0}
 }
 
 /* reviews */
-.review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:26px}
+.review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:26px}@media(max-width:1040px){.review-grid{grid-template-columns:1fr 1fr}}@media(max-width:640px){.review-grid{grid-template-columns:1fr}}
 .review-summary{display:flex;align-items:center;gap:18px;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px 24px;flex-wrap:wrap}
 .review-summary strong{font-family:'Poppins',sans-serif;font-size:2.2rem;color:var(--acc);line-height:1}
 .review-summary b{display:block;font-family:'Poppins',sans-serif}
